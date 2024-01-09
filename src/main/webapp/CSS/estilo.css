@@ -1,0 +1,101 @@
+@import "bulma/sass/grid/button.sass";
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.my-element{
+    align-content: center;
+}
+
+
+/* Alinea los botones a la derecha */
+.navbar-end .navbar-item {
+    text-align: right;
+}
+
+/* Estilo adicional para los botones */
+.navbar-item .buttons .button {
+    margin-left: 5px;
+}
+
+.navbar-menu {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+}
+.navbar-start:hover {
+    background: linear-gradient(to right, gray, #6600cc);
+
+}
+
+.navbar-start:active {
+    background-color: #e0e0e0;
+
+}
+
+
+/* Agrega este CSS para hacer el modal responsive */
+@media screen and (max-width: 700px) {
+    .modal-content {
+        background: linear-gradient(to right, gray, #6600cc);
+    }
+    .my-element{
+        background: green;
+    }
+}
+@media screen and (min-width: 701px) {
+    .modal-content {
+        background: green;
+    }
+    .my-element{
+        background: linear-gradient(to right, gray, #6600cc);
+    }
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    background: url("../IMG/fondoAlbarrregas.jpeg");
+    background-size: 100% 90%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-clip: border-box;
+    background-attachment: fixed;
+    height: 150vh;
+}
+
+.card {
+    width: 200px;
+    height: 200px;
+    transition: transform .2s;
+}
+.card:hover {
+    transform: scale(1.1); /* Escala la tarjeta a 110% cuando el ratón pasa por encima */
+}
+
+h1 {
+    color: white;
+    font-family: fantasy;
+    text-align: center;
+    font-weight: bold;
+}
+.logonav{
+    margin: 5px;
+    width: 20%;
+    transition: transform .2s;
+}
+.logonav:hover {
+    transform: scale(1.1);
+}
+.modal-content {
+
+ 
+    background-size: 80% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-clip: border-box;
+    background-attachment: fixed;
+    height: 80%;
+}
